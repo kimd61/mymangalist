@@ -6,17 +6,32 @@
     box-sizing: border-box;
 }
 
+/* Petal canvas styling */
+#petal-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0; /* Lowest layer for background petals */
+}
+
 body {
     font-family: 'Overpass', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #121212;
     color: #FFFFFF;
     line-height: 1.6;
+    position: relative;
+    z-index: 1;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    position: relative;
+    z-index: 2;
 }
 
 a {
@@ -87,7 +102,7 @@ nav ul li a.active {
     outline: none;
     flex-grow: 1;
     font-size: 1rem;
-    font-family: 'Overpass', Tahoma, Geneva, Verdana, sans-serif !important;
+    font-family: 'Overpass', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .search-bar button {
@@ -118,6 +133,8 @@ nav ul li a.active {
 /* Main Content */
 main {
     padding: 0 0 30px;
+    position: relative;
+    z-index: 2;
 }
 
 /* Manga Grid - Shared with both pages */
@@ -125,6 +142,8 @@ main {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     gap: 25px;
+    position: relative;
+    z-index: 2;
 }
 
 .manga-card {
@@ -134,6 +153,8 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s, box-shadow 0.3s;
     cursor: pointer;
+    position: relative;
+    z-index: 3;
 }
 
 .manga-card:hover {
@@ -262,6 +283,8 @@ footer {
     border-top: 1px solid #E5A8B7; /* Pink border */
     padding: 20px 0;
     margin-top: 30px;
+    position: relative;
+    z-index: 2;
 }
 
 footer .container {
@@ -312,7 +335,8 @@ footer p {
     padding: 30px;
     margin-bottom: 40px;
     border: 1px solid #F0C1D3; /* Light pink border */
-    font-family: 'Overpass', Tahoma, Geneva, Verdana, sans-serif !important;
+    position: relative;
+    z-index: 2;
 }
 
 .search-filter {
@@ -340,7 +364,7 @@ footer p {
     border-radius: 5px;
     font-size: 1rem;
     outline: none;
-    font-family: 'Overpass', Tahoma, Geneva, Verdana, sans-serif !important;
+    font-family: 'Overpass', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .browse-search button {
@@ -383,7 +407,7 @@ footer p {
     outline: none;
     cursor: pointer;
     font-size: 0.95rem;
-    font-family: 'Overpass', Tahoma, Geneva, Verdana, sans-serif !important;
+    font-family: 'Overpass', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Filter Buttons */
