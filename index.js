@@ -32,6 +32,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
     
+    // Set up user profile icon click (ADD THIS!)
+    const userProfileIcon = document.querySelector('.user-profile i');
+    if (userProfileIcon) {
+        userProfileIcon.addEventListener('click', () => {
+            window.location.href = 'my-list.html';
+        });
+    }
+    
     fetchTopManga();
     
     loadMoreButton.addEventListener('click', () => {
