@@ -312,6 +312,7 @@ footer p {
     padding: 30px;
     margin-bottom: 40px;
     border: 1px solid #F0C1D3; /* Light pink border */
+    font-family: 'Overpass', Tahoma, Geneva, Verdana, sans-serif !important;
 }
 
 .search-filter {
@@ -339,6 +340,7 @@ footer p {
     border-radius: 5px;
     font-size: 1rem;
     outline: none;
+    font-family: 'Overpass', Tahoma, Geneva, Verdana, sans-serif !important;
 }
 
 .browse-search button {
@@ -381,6 +383,7 @@ footer p {
     outline: none;
     cursor: pointer;
     font-size: 0.95rem;
+    font-family: 'Overpass', Tahoma, Geneva, Verdana, sans-serif !important;
 }
 
 /* Filter Buttons */

@@ -113,6 +113,7 @@
     color: #FFFFFF;
     font-size: 1rem;
     outline: none;
+    font-family: 'Overpass', Tahoma, Geneva, Verdana, sans-serif !important;
 }
 
 .form-group textarea {
