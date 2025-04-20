@@ -479,11 +479,6 @@ footer {
         justify-content: flex-start;
     }
     
-    .cell-title {
-        display: grid;
-        grid-template-columns: 70px auto;
-    }
-    
     .cell-title .manga-title-main {
         grid-column: 2;
         margin-top: 5px;
@@ -498,25 +493,15 @@ footer {
         margin-right: 15px;
     }
     
-    .cell-score, 
-    .cell-progress,
-    .cell-status {
-        padding-left: 70px;
-        position: relative;
-    }
-    
     .cell-score::before,
     .cell-progress::before,
     .cell-status::before {
         content: attr(data-label);
         font-weight: 600;
-        position: absolute;
-        left: 10px;
     }
     
     .cell-actions {
         justify-content: flex-start;
-        padding-left: 70px;
     }
     
     .edit-manga-info {
