@@ -480,6 +480,11 @@ footer p {
     header .container {
         flex-wrap: wrap;
     }
+
+    .container .logo,
+    .user-profile {
+        display: none;
+    }
     
     nav {
         order: 3;
@@ -498,6 +503,7 @@ footer p {
     .search-bar {
         margin-left: auto;
         margin-right: 15px;
+        margin-bottom: 15px;
     }
     
     .manga-grid {
@@ -517,6 +523,10 @@ footer p {
 
     .browse-search {
         flex-direction: column;
+    }
+
+    .browse-search button {
+        padding: 5px;
     }
 
     .results-header {
