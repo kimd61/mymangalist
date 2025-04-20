@@ -103,7 +103,7 @@ nav ul li a.active {
     outline: none;
     flex-grow: 1;
     font-size: 1rem;
-    font-family: 'Overpass', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Overpass', Tahoma, Geneva, Verdana, sans-serif !important;
 }
 
 .search-bar button {
@@ -120,9 +120,15 @@ nav ul li a.active {
     background: #D192A3; /* Slightly darker pink on hover */
 }
 
+.user-profile i {
+    font-size: 28px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
 .user-profile i:hover {
     color: #E5A8B7;
-    cursor: pointer;
 }
 
 /* Hero Section and Features */
