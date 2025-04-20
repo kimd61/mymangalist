@@ -68,40 +68,51 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a.active {
-    color: #FFFFFF;
+    color: #E5A8B7; /* Pink color for hover */
 }
 
 .search-bar {
     display: flex;
-    background: #2A2A2A;
+    background: #351D23; /* Pink-tinted dark background */
     border-radius: 5px;
     overflow: hidden;
     max-width: 300px;
 }
 
 .search-bar input {
-    background: #2A2A2A;
+    background: #351D23; /* Pink-tinted dark background */
     border: none;
     padding: 12px 15px;
     color: #FFFFFF;
     outline: none;
     flex-grow: 1;
     font-size: 1rem;
+    font-family: 'Overpass', Tahoma, Geneva, Verdana, sans-serif !important;
 }
 
 .search-bar button {
-    background: white;
+    background: #E5A8B7; /* Your pink color as button */
     border: none;
-    color: black;
+    color: white;
     padding: 0 20px;
     cursor: pointer;
     font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.search-bar button:hover {
+    background: #D192A3; /* Slightly darker pink on hover */
 }
 
 .user-profile i {
     font-size: 28px;
     color: #FFFFFF;
     cursor: pointer;
+    transition: color 0.3s;
+}
+
+.user-profile i:hover {
+    color: #E5A8B7;
 }
 
 /* Hero Section and Features */
@@ -110,7 +121,7 @@ nav ul li a.active {
     padding: 50px 0;
     text-align: center;
     border-radius: 12px;
-    border: 1px solid #2A2A2A;
+    border: 1px solid #F0C1D3; /* Light pink border */
     margin: 20px auto;
     max-width: 1240px;
 }
@@ -192,9 +203,9 @@ main {
 }
 
 .filter-controls select {
-    background: #2A2A2A;
+    background: #351D23; /* Pink-tinted dark background */
     color: #FFFFFF;
-    border: 1px solid #3A3A3A;
+    border: 1px solid #E5A8B7; /* Your pink color as border */
     padding: 8px 12px;
     border-radius: 4px;
     outline: none;
@@ -209,7 +220,7 @@ main {
 }
 
 .manga-card {
-    background: #2A2A2A;
+    background: #2C1D21; /* Dark pink-tinted background */
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -220,6 +231,7 @@ main {
 .manga-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    border: 1px solid #E5A8B7; /* Pink border on hover */
 }
 
 .manga-cover {
@@ -300,8 +312,8 @@ main {
 }
 
 .spinner {
-    border: 4px solid rgba(255, 255, 255, 0.2);
-    border-top: 4px solid #FFFFFF;
+    border: 4px solid rgba(229, 168, 183, 0.2); /* Pink loading spinner */
+    border-top: 4px solid #E5A8B7;
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -322,7 +334,7 @@ main {
 }
 
 #load-more {
-    background: #FFFFFF;
+    background: #E5A8B7; /* Pink button */
     color: #121212;
     border: none;
     padding: 10px 25px;
@@ -333,12 +345,13 @@ main {
 }
 
 #load-more:hover {
-    background: #DDDDDD;
+    background: #D192A3; /* Darker pink on hover */
 }
 
 /* Footer */
 footer {
-    background: #1E1E1E;
+    background: #2C1D21; /* Pink-tinted dark background */
+    border-top: 1px solid #E5A8B7; /* Pink border */
     padding: 20px 0;
     margin-top: 30px;
 }
@@ -362,7 +375,7 @@ footer p {
 }
 
 .social-links a:hover {
-    color: #DDDDDD;
+    color: #E5A8B7; /* Pink hover for social links */
 }
 
 /* Media Queries */
